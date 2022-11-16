@@ -1,13 +1,217 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* custom colors */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --bgcolor:#f1f5fd;
+    --primary-color:#6f5de7;
+    --text-color: #828286;
+    --main-text-color:#333333;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header a{
+    color: var(--primary-color)!important;
+}
+.header a:hover{
+    color: var(--text-color)!important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #333333;
+}
+
+/*Navbar CSS start*/
+
+.navbar-bg{
+    background-color: var(--bgcolor);
+    padding: 2rem 0;
+    z-index: 99;
+    position: relative;
+    border-style: ridge;
+    
+}
+
+.navbar-brand{
+    font-size: 15px;
+}
+.btn-style{
+    width:12rem;
+    height:4rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    text-transform: capitalize;
+}
+.btn:hover{
+    border: .1rem solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+.navbar li{
+    padding: 0 2rem;
+    
+}
+.navbar li a{
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar li a:hover{
+    color: var(--primary-color)!important;
+    text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+}
+.drop {
+    position: relative;
+  }
+  
+  .menu {
+    position: absolute;
+  
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+  
+    border: 1px solid grey;
+    width: 150px;
+  }
+  
+  .menu > li {
+    margin: 0;
+  
+    background-color: white;
+  }
+  
+  .menu > li:hover {
+    background-color: lightgray;
+  }
+  
+  .menu > li > button {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+  
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
+/*Navbar CSS end*/
+
+
+/*Header CSS Start*/
+header{
+    background-color: var(--bgcolor);
+}
+.student-info h3{
+    font-size: 20px;
+}
+.student-info h3:hover{
+    color: #6f5de7;
+    transition-duration:.5s ;
+}
+.student-info{
+    padding:20px 50px;
+    width: 40%;
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+    border-style: dotted;
+}
+.info h2{
+    font-size: 20px;
+}
+.header{
+    border-style: groove;
+    width: 23%;
+    margin-right: 10px;
+}
+.header h2:hover{
+    color: #6f5de7;
+    transition-duration:.5s ;
+}
+.header:hover{
+    background-color: #d3d3d4;
+    transition-duration:.5s ;
+}
+.info{
+    padding-top: 20px;
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+.course{
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.course h2:hover{
+    color: #6f5de7;
+    transition-duration:.5s ;
+}
+.course1{
+    border-style: ridge;
+    width: 45%;
+    margin-right: 20px;
+}
+.course p{
+    font-size: 19px;
+}
+.course input{
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+}
+.course select{
+    font-size: 15px;
+    padding: 5px;
+    width: 160px;
+}
+.course a{
+    margin: 20px;
+}
+
+/*Header CSS end*/
+
+
+@media(min-width: 1500px){
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl{
+        max-width: 1500px !important;
+    }
+}
+
+@media(min-width:1400px){
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1400px;
+    }
 }
